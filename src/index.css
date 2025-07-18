@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --gr-from: #092D43;
+  --gr-to: #B9F3F6;
+  --dark-blue: #092D43;
+  --light-blue: #20BEAD;
+  --Male:  #20BEAD;
+  --Female:#092D43;
+  --light-gray: #9295AB;
+  --text-gray: #4b5563;
+  --bg-blue: #F3F6FF;
+}
+
+* {
+  font-family: "Roboto", serif !important;
+}
