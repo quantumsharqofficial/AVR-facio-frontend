@@ -109,6 +109,7 @@ const Chart1 = () => {
         userInfo.attendance ? "" : "hidden"
       }`}
     >
+      <p className="font-semibold text-[--text-gray]">Attendance System </p>
       <div className="flex justify-end items-center mb-4">
         <div className="flex gap-2">
           {["day", "month", "year"].map((period) => (

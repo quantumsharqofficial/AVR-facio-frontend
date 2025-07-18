@@ -31,6 +31,8 @@ import HeadCountDetails from "./components/HeadCount/HeadCountDetails";
 import EmployeeAndAttendance from "./pages/Employee/EmployeeAndAttendance";
 import Inventroy from "./pages/Inventroy/Inventroy";
 import HumanDetection from "./pages/HumanDetection/HumanDetection";
+import Vip from "./pages/VIP/Vip";
+import Theif from "./pages/Thief/Theif";
 
 const AppContent = () => {
   const location = useLocation();
@@ -123,6 +125,9 @@ const AppContent = () => {
             <Route path="/company-Details/:id" element={<CompanyDetails />} />
             <Route path="/manage-companys" element={<ManageEmployee />} />
             <Route path="/edit-company/:id" element={<EditCompany />} />
+
+            <Route path="/vip" element={<Vip />} />
+            <Route path="/thief" element={<Theif />} />
           </Routes>
         </div>
       </div>

@@ -43,12 +43,18 @@ const Sidebar = () => {
       route: "/head-count",
       productInfo: userInfo.headcount,
     },
-    // {
-    //   name: "Inventroy",
-    //   icon: "tabler:packages",
-    //   route: "/inventroy",
-    //   productInfo: userInfo.headcount,
-    // },
+    {
+      name: "VIP",
+      icon: "tabler:crown", // 👈 Most common for VIP
+      route: "/vip",
+      productInfo: true,
+    },
+    {
+      name: "Thief",
+      icon: "tabler:spy", // 👈 more suitable icon
+      route: "/thief",
+      productInfo: true,
+    },
   ];
 
   const masterMenuItems = [
