@@ -16,10 +16,15 @@ function Vip() {
     setViewTab(key);
   };
 
-  const getButtonClass = (tab) =>
+    const getButtonClass = (tab) =>
     viewTab === tab
-      ? "bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+    ? "bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
       : "bg-slate-200 text-black px-4 py-2 rounded hover:bg-slate-300";
+
+  // const getButtonClass = (tab) =>
+  //   viewTab === tab
+  //     ? "bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700"
+  //     : "bg-yellow-200 text-black px-4 py-2 rounded hover:bg-yellow-300";
 
   const renderContent = () => {
     switch (viewTab) {
