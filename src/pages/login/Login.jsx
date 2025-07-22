@@ -105,7 +105,8 @@ function Login() {
         sessionStorage.setItem("user", JSON.stringify(user));
         toast.success("Login successful!");
         setTimeout(() => {
-          Navigate("/dashboard");
+          // Navigate("/dashboard");
+          Navigate("/head-count");
         }, 1000);
       } catch (error) {
         const errorMessage = error.response

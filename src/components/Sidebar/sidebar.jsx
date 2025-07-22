@@ -7,12 +7,12 @@ const Sidebar = () => {
   const isOpen = useSelector((state) => state.toggle.isOpen);
   const userInfo = JSON.parse(sessionStorage?.getItem("user"));
   const adminMenuItems = [
-    {
-      name: "Dashboard",
-      icon: "material-symbols:dashboard-outline-rounded",
-      route: "/dashboard",
-      productInfo: true,
-    },
+    // {
+    //   name: "Dashboard",
+    //   icon: "material-symbols:dashboard-outline-rounded",
+    //   route: "/dashboard",
+    //   productInfo: true,
+    // },
     {
       name: "Employees & Attendance",
       icon: "fluent:people-checkmark-24-regular",
@@ -43,18 +43,18 @@ const Sidebar = () => {
       route: "/head-count",
       productInfo: userInfo.headcount,
     },
-    {
-      name: "VIP",
-      icon: "tabler:crown", // 👈 Most common for VIP
-      route: "/vip",
-      productInfo: true,
-    },
-    {
-      name: "Thief",
-      icon: "tabler:spy", // 👈 more suitable icon
-      route: "/thief",
-      productInfo: true,
-    },
+    // {
+    //   name: "VIP",
+    //   icon: "tabler:crown", // 👈 Most common for VIP
+    //   route: "/vip",
+    //   productInfo: true,
+    // },
+    // {
+    //   name: "Thief",
+    //   icon: "tabler:spy", // 👈 more suitable icon
+    //   route: "/thief",
+    //   productInfo: true,
+    // },
   ];
 
   const masterMenuItems = [
