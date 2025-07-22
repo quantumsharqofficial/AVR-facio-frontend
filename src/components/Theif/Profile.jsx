@@ -7,11 +7,12 @@ function Profile() {
   const [theif, setTheif] = useState([]);
   const compData = JSON.parse(sessionStorage.getItem("user"));
 
-
   // compData.c_vComId, // you can make this dynamic
   const getTheif = async () => {
     try {
-      const response = await AxiosInstance.get(`/thief/get-all/${compData.c_vComId}`);
+      const response = await AxiosInstance.get(
+        `/thief/get-all/${compData.c_vComId}`
+      );
       const data = response.data.response;
       console.log(data);
       setTheif(data);
@@ -19,8 +20,6 @@ function Profile() {
       console.log(error);
     }
   };
-
-
 
   useEffect(() => {
     getTheif();
@@ -34,7 +33,7 @@ function Profile() {
           <thead>
             <tr className="bg-red-200 ">
               <th className="p-2">S.No</th>
-              <th className="p-2">Image</th>
+              <th className="p-2">Profile</th>
               <th className="p-2">Name</th>
               <th className="p-2">Email</th>
               <th className="p-2">Contact</th>
@@ -42,9 +41,9 @@ function Profile() {
             </tr>
           </thead>
           <tbody>
-            {theif?.map((t,i) => (
+            {theif?.map((t, i) => (
               <tr key={i} className="border-t hover:bg-red-100">
-                <td className="p-2">{i+1}</td>
+                <td className="p-2">{i + 1}</td>
                 <td className="p-2 flex justify-center">
                   <img
                     src={t.t_vProfileImg}
@@ -55,7 +54,7 @@ function Profile() {
                 <td className="p-2">{t.t_vThiefName}</td>
                 <td className="p-2 break-all">{t.t_vEmail}</td>
                 <td className="p-2">{t.t_vPhone}</td>
-                  {/* <td className="p-2 space-x-2">
+                {/* <td className="p-2 space-x-2">
                     <button
                       // onClick={() => handleEdit(vip.name)}
                       className="px-2 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"

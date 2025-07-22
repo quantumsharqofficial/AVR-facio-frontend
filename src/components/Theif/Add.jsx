@@ -47,14 +47,17 @@ function Add() {
   };
 
   return (
-    <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow border">
-      <h2 className="text-xl font-semibold mb-4 text-center">Add Thief</h2>
+    <div className="p-6 max-w-md mx-auto rounded-xl shadow border border-red-300">
+      <h2 className="text-xl font-bold mb-4 text-center text-red-700">
+        👑 Add Thief
+      </h2>
+
       <form className="space-y-4">
         <input
           type="text"
           name="t_vThiefName"
           placeholder="Thief Name"
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border border-red-300 rounded bg-white"
           value={formData.t_vThiefName}
           onChange={handleChange}
           required
@@ -63,14 +66,14 @@ function Add() {
           type="text"
           name="t_vPhone"
           placeholder="Phone Number"
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border border-red-300 rounded bg-white"
           value={formData.t_vPhone}
           onChange={handleChange}
           required
         />
         <select
           name="t_eGender"
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border border-red-300 rounded bg-white"
           value={formData.t_eGender}
           onChange={handleChange}
           required
@@ -83,14 +86,14 @@ function Add() {
           type="email"
           name="t_vEmail"
           placeholder="Email"
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border border-red-300 rounded bg-white"
           value={formData.t_vEmail}
           onChange={handleChange}
         />
         <textarea
           name="t_vAddress"
           placeholder="Address"
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border border-red-300 rounded bg-white"
           value={formData.t_vAddress}
           onChange={handleChange}
         />
@@ -98,7 +101,7 @@ function Add() {
           type="text"
           name="t_vProfileImg"
           placeholder="Profile Image Filename"
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border border-red-300 rounded bg-white"
           value={formData.t_vProfileImg}
           onChange={handleChange}
         />
