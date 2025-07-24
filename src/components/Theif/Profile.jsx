@@ -134,7 +134,7 @@ function Profile() {
                   type="text"
                   value={selectedTheft.t_vTheftName}
                   onChange={(e) =>
-                    setSelectedTheft({ ...selectedTheft, t_vTheftName: e.target.value })
+                    setSelectedTheft({ ...selectedTheft, t_vThiefName: e.target.value })
                   }
                   className="w-full px-3 py-2 border rounded"
                 />
