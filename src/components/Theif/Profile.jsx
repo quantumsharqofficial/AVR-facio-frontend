@@ -37,6 +37,7 @@ function Profile() {
               <th className="p-2">Name</th>
               <th className="p-2">Email</th>
               <th className="p-2">Contact</th>
+              <th className="p-2">Address</th>
               {/* <th className="p-2">Action</th> */}
             </tr>
           </thead>
@@ -54,6 +55,7 @@ function Profile() {
                 <td className="p-2">{t.t_vThiefName}</td>
                 <td className="p-2 break-all">{t.t_vEmail}</td>
                 <td className="p-2">{t.t_vPhone}</td>
+                <td className="p-2">{t.t_vAddress}</td>
                 {/* <td className="p-2 space-x-2">
                     <button
                       // onClick={() => handleEdit(vip.name)}

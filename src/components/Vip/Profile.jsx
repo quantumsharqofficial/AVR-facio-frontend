@@ -53,7 +53,7 @@ function Profile() {
               <th className="p-2">Email</th>
               <th className="p-2">Contact</th>
               <th className="p-2">Address</th>
-              <th className="p-2">Action</th>
+              {/* <th className="p-2">Action</th> */}
             </tr>
           </thead>
           <tbody>
@@ -71,7 +71,7 @@ function Profile() {
                 <td className="p-2">{vip.v_vEmail}</td>
                 <td className="p-2">{vip.v_vPhone}</td>
                 <td className="p-2">{vip.v_vAddress}</td>
-                <td className="p-2 space-x-2">
+                {/* <td className="p-2 space-x-2">
                   <button
                     onClick={() => handleEdit(vip.name)}
                     className="px-2 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
@@ -84,7 +84,7 @@ function Profile() {
                   >
                     Delete
                   </button>
-                </td>
+                </td> */}
               </tr>
             ))}
           </tbody>
